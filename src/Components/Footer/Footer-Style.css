@@ -1,0 +1,18 @@
+.container-footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../../../public/image/Reservation/2.png);
+    background-color: black;
+    background-repeat: round;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.line-info-footer{
+    width: 100%;
+    height: 2px;
+    background-color: orangered;
+}

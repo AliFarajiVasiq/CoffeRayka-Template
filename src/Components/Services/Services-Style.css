@@ -1,0 +1,19 @@
+.container-services{
+    width: 100%;
+    height: 45vh;
+    padding: 20px 0px;
+    color: white;
+    background-image: url(../../../public/image/Services/1.jpg);
+    background-repeat: round;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info-services{
+    font-size: 19px;
+    font-weight: 800;
+    margin-top: -10px;
+}

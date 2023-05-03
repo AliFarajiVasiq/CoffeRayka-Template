@@ -1,0 +1,122 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  padding: 10px 20px;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.434);
+  box-shadow: 0px 0px 10px 0px white;
+}
+.ul-navbar {
+  margin-right: -7%;
+}
+.item-navbar {
+  display: inline-block;
+  margin: 5px;
+  font-size: 15px;
+}
+.link-navbar {
+  padding: 18px 10px;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  color: white;
+}
+.item-navbar:nth-child(1) a {
+  color: var(--my-color);
+}
+.link-navbar:hover {
+  color: var(--my-color);
+}
+
+.base {
+  display: none;
+  cursor: pointer;
+  padding: 35px 10px;
+  z-index: 2;
+}
+.bar {
+  width: 40px;
+  height: 4px;
+  background: var(--my-color);
+  box-shadow: 0 0 6px 0.5px var(--my-color), 0 0 6px 1px var(--my-color);
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+.bar::after,
+.bar::before {
+  position: absolute;
+  content: "";
+  width: inherit;
+  height: inherit;
+  background-color: var(--my-color);
+  box-shadow: 0 0 6px 0.5px var(--my-color), 0 0 6px 1px var(--my-color);
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.bar::after {
+  transform: translateY(-15px);
+}
+.bar::before {
+  transform: translateY(15px);
+}
+.active.bar {
+  background: none;
+  box-shadow: none;
+  transform: rotate(360deg);
+}
+.active.bar::after {
+  transform: rotate(45deg) translateY(0px);
+}
+.active.bar::before {
+  transform: rotate(-45deg) translateY(0px);
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .base {
+    display: block;
+    margin-right: -20px;
+  }
+  .ul-navbar {
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    transition: .5s ease-in-out;
+    top: -16px;
+    right: -80px;
+    width: 0%;
+    height: 100vh;
+    margin-right: 0%;
+    background-color: rgba(0, 0, 0, 0.861);
+  }
+  .ul-navbar-open {
+    width: 100%;
+  }
+  .link-navbar{
+    padding: 0px;
+    font-size: 25px;
+  }
+  .btn-navbar{
+    margin-left: 5%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .btn-navbar {
+    font-size: 12px !important;
+    margin-left: 7%;
+  }
+  .btn-navbar a {
+    font-size: 15px;
+    font-weight: 900;
+  }
+}

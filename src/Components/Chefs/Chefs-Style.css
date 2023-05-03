@@ -1,0 +1,63 @@
+.container-chefs {
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  background-color: white;
+}
+.father-chef-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cover-chef-info {
+  display: flex;
+  width: 70%;
+  margin: 10px;
+  border: 10px solid rgb(161, 161, 161);
+}
+.reverse-chef-info {
+  flex-direction: row-reverse;
+}
+.cover-img-chef {
+  width: 50%;
+}
+.cover-img-chef > img {
+  width: 100%;
+}
+.cover-text-chef {
+  width: 50%;
+  padding: 20px;
+}
+.job-chef {
+  color: orangered;
+}
+.info-chef {
+  line-height: 1.4;
+  text-align: justify;
+}
+.signature-chef{
+    float: left;
+}
+@media only screen and (max-width: 800px) {
+  .cover-chef-info {
+    align-items: center;
+    flex-direction: column;
+  }
+  .reverse-chef-info {
+    flex-direction: column;
+  }
+  .cover-img-chef {
+    width: 90%;
+  }
+  .cover-text-chef {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 420px){
+    .cover-chef-info{
+        width: 90%;
+    }
+    .info-chef{
+        font-size: 15px;
+    }
+}

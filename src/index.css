@@ -1,0 +1,57 @@
+@font-face {
+  font-family: vazir;
+  src: url(Font/Vazir/Vazir.eot) format('eot'),
+  url(Font/Vazir/Vazir.ttf) format('ttf'),
+  url(Font/Vazir/Vazir.woff) format('woff'),
+  url(Font/Vazir/Vazir.woff2) format('woff2');
+}
+:root{
+  --my-color: rgb(255, 149, 0);
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0%;
+  font-family: vazir;
+  overflow-x: hidden;
+}
+code {
+  font-family: vazir;
+}
+.btn{
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-family: vazir;
+  text-decoration: none;
+  color: white;
+  transition: .2s ease-in-out;
+  border: 3px solid orangered;
+  background-color: orangered;
+}
+.btn a{
+  font-size: 20px;
+  font-family: vazir;
+  transition: .2s ease-in-out;
+  text-decoration: none;
+  color: white;
+}
+.btn:hover{
+  color: orangered;
+  background-color: transparent;
+}
+.btn:hover a{
+  color: orangered;
+}
+.component-cover-title{
+  text-align: center;
+}
+.component-span-title{
+  color: orangered;
+}
+.component-h1-title{
+  margin-top: -5px;
+  font-size: 40px;
+}
